@@ -1,1 +1,1 @@
-"""Index."""
+"""Brain games project."""
