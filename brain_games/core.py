@@ -23,7 +23,7 @@ def run_game(game_description, prepare_round):
         else:
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'."
-                  f"\nLet's try again, {user_name}")
+                  f"\nLet's try again, {user_name}!")
             return None
 
-    print(f'Congratulations, {user_name}')
+    print(f'Congratulations, {user_name}!')
