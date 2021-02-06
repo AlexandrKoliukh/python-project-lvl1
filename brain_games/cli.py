@@ -1,4 +1,3 @@
-"""CLI functions."""
 # flake8: noqa: WPS421
 
 import prompt
