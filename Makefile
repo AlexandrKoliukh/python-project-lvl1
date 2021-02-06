@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := brain-games
+.DEFAULT_GOAL := republish
 
 install:
 	poetry install
@@ -14,4 +14,9 @@ publish:
 
 package-install:
 	python3 -m pip install --user dist/*.whl
+
+republish:
+	rm -rf dist
+	make build
+	make publish
 
