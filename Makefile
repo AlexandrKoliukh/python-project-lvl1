@@ -20,3 +20,6 @@ republish:
 	make build
 	make publish
 
+lint:
+	poetry run flake8 brain_games
+
