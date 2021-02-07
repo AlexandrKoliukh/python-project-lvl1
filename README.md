@@ -1,4 +1,4 @@
-#Brain Games
+# Brain Games
 
 [![Actions Status](https://github.com/AlexandrKoliukh/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AlexandrKoliukh/python-project-lvl1/actions)
 ![Python CI](https://github.com/AlexandrKoliukh/python-project-lvl1/workflows/Python%20CI/badge.svg?branch=main)
