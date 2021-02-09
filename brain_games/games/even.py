@@ -4,9 +4,9 @@ from brain_games import core
 
 
 def prepare_round():
-    random_number = randint(1, 100)
-    question_text = str(random_number)
-    right_answer = 'yes' if random_number % 2 == 0 else 'no'
+    number = randint(1, 100)
+    question_text = str(number)
+    right_answer = 'yes' if number % 2 == 0 else 'no'
     return question_text, right_answer
 
 

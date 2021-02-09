@@ -1,17 +1,15 @@
-from random import randint
-from random import choice
+from random import randint, choice
 
 from brain_games import core
-
 
 AVAILABLE_OPERATIONS = ('+', '-', '*')
 
 
 def prepare_round():
     operation = choice(AVAILABLE_OPERATIONS)
-    operator1 = randint(1, 100)
-    operator2 = randint(1, 100)
-    question_text = f'{operator1} {operation} {operator2}'
+    number_1 = randint(1, 100)
+    number_2 = randint(1, 100)
+    question_text = f'{number_1} {operation} {number_2}'
     right_answer = str(eval(question_text))
     return question_text, right_answer
 

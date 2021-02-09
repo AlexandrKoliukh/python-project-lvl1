@@ -8,9 +8,9 @@ def run_game(game_description, prepare_round):
     print(f'Hello, {user_name}!')
     print(f'{game_description}')
 
-    round_number = 0
+    round_number = 1
 
-    while round_number < GAME_ROUNDS_COUNT:
+    while round_number <= GAME_ROUNDS_COUNT:
         round_number += 1
         question_text, right_answer = prepare_round()
 

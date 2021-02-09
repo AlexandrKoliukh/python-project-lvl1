@@ -8,11 +8,11 @@ def gcd(a, b):
 
 
 def prepare_round():
-    random_number1 = randint(1, 100)
-    random_number2 = randint(1, 100)
+    number_1 = randint(1, 100)
+    number_2 = randint(1, 100)
 
-    question_text = f'{random_number1} {random_number2}'
-    right_answer = str(gcd(random_number1, random_number2))
+    question_text = f'{number_1} {number_2}'
+    right_answer = str(gcd(number_1, number_2))
     return question_text, right_answer
 
 

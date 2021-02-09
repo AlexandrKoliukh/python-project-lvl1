@@ -17,10 +17,10 @@ def is_prime(n):
 
 
 def prepare_round():
-    random_number = randint(1, 100)
+    number = randint(1, 100)
 
-    question_text = str(random_number)
-    right_answer = 'yes' if is_prime(random_number) else 'no'
+    question_text = str(number)
+    right_answer = 'yes' if is_prime(number) else 'no'
     return question_text, right_answer
 
 
