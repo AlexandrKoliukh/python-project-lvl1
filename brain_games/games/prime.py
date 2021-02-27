@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games import core
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(n):
@@ -19,13 +19,6 @@ def is_prime(n):
 def prepare_round():
     number = randint(1, 100)
 
-    question_text = str(number)
+    question = str(number)
     right_answer = 'yes' if is_prime(number) else 'no'
-    return question_text, right_answer
-
-
-def main():
-    game_description = \
-        'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-    core.run_game(game_description, prepare_round)
+    return question, right_answer

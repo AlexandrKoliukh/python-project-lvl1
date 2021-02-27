@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games import core
+DESCRIPTION = 'What number is missing in the progression?'
 
 PROGRESSION_LENGTH = 10
 
@@ -17,24 +17,17 @@ def prepare_round():
     right_answer = str(
         calculate_step_value(init_number, step_value, hidden_element_index))
 
-    question_text = ''
+    question = ''
     current_step = 0
 
     while current_step < PROGRESSION_LENGTH:
         if hidden_element_index == current_step:
-            question_text += '..'
+            question += '..'
         else:
-            question_text += str(
+            question += str(
                 calculate_step_value(init_number, step_value, current_step))
         if current_step != PROGRESSION_LENGTH - 1:
-            question_text += ' '
+            question += ' '
         current_step += 1
 
-    return question_text, right_answer
-
-
-def main():
-    game_description = \
-        'What number is missing in the progression?'
-
-    core.run_game(game_description, prepare_round)
+    return question, right_answer
